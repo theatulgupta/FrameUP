@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_purple"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/videocall_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_videocall" />
+
+    <ImageView
+        android:id="@+id/frameup_logo2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="-60dp"
+        app:layout_constraintEnd_toEndOf="@+id/videocall_icon"
+        app:layout_constraintStart_toStartOf="@+id/videocall_icon"
+        app:layout_constraintTop_toBottomOf="@+id/videocall_icon"
+        app:srcCompat="@drawable/ic_frameup" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videocall_icon">
+
+        <EditText
+            android:id="@+id/nameBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_box"
+            android:drawableStart="@drawable/custom_username"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:fontFamily="@font/days_one"
+            android:hint="FULL NAME"
+            android:inputType="textPersonName"
+            android:padding="20dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textColorHint="#DFDFDF" />
+
+        <EditText
+            android:id="@+id/phoneBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_box"
+            android:drawableStart="@drawable/custom_phone"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:fontFamily="@font/days_one"
+            android:hint="PHONE"
+            android:inputType="phone"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="#DFDFDF" />
+
+        <EditText
+            android:id="@+id/emailBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_box"
+            android:drawableStart="@drawable/custom_email"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:fontFamily="@font/days_one"
+            android:hint="EMAIL"
+            android:inputType="textEmailAddress"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="#DFDFDF" />
+
+        <EditText
+            android:id="@+id/passwordBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_box"
+            android:drawableStart="@drawable/custom_password"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:fontFamily="@font/days_one"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="#DFDFDF" />
+
+        <EditText
+            android:id="@+id/confirmBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_box"
+            android:drawableStart="@drawable/custom_password"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:fontFamily="@font/days_one"
+            android:hint="CONFIRM PASSWORD"
+            android:inputType="textPassword"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="#DFDFDF" />
+
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="200dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button_style"
+            android:fontFamily="@font/days_one"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textAlignment="center"
+            android:textColor="#1F1A30"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/days_one"
+            android:text="Already have an account?"
+            android:textAlignment="center"
+            android:textColor="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/signIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:fontFamily="@font/days_one"
+            android:text="Sign In"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/theme_blue"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

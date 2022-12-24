@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "424894447972",
+    "project_id": "frameup-india",
+    "storage_bucket": "frameup-india.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424894447972:android:55df0b17c7fe40bca9fa71",
+        "android_client_info": {
+          "package_name": "com.agkminds.frameup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "424894447972-pqgovkrj17rogblpek5rtd14kos0qkgt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJxzLUHeF9OIsnfxHkNIvPGlSRbILHK8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "424894447972-pqgovkrj17rogblpek5rtd14kos0qkgt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
